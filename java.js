@@ -1,11 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
+
+
+  document.addEventListener("DOMContentLoaded", function () {
   // Your existing code...
 
-  // Hide the welcome overlay after the animation is complete
-  
-// Hide the welcome overlay after the animation is complete
-  const welcomeOverlay = document.querySelector(".welcome-overlay");
+  // Show the welcome overlay initially
+  const welcomeOverlay = document.getElementById("welcomeOverlay");
+  welcomeOverlay.classList.remove("hidden");
+
+  // Hide the welcome overlay after 5 seconds
   setTimeout(function () {
     welcomeOverlay.classList.add("hidden");
-  }, 7000); // Adjust the time (in milliseconds) to match the duration of your animation
+  }, 5000);
 });
+
