@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Slideshow Example</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect">
+
+  <style>
+     {
+      font-family: 'Roboto Mono', monospace;
+      /* Set a fixed height for the .bcg div */
+      .bcg {
+        height: 100vh; /* Adjust the height as needed to fit the screen */
+        overflow-y: visible;
+        background-position: center top
+          ; /* Position the background image at the top center */
+        background-size: cover; /* Make the image cover the entire container */
+      }
+
+  </style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = [
+       "https://i.pinimg.com/originals/c1/fc/9d/c1fc9d7f6ae08d56f2b84e81799790a5.gif",     
+       
+        
+ "https://i.pinimg.com/originals/82/48/32/82483210450fd8614b9e057ab08394df.gif",
+        
+       
+        
+         "https://i.pinimg.com/originals/99/cd/09/99cd0925c516b5d0a740dffd03c3e0df.gif",
+        
+        "https://i.pinimg.com/originals/a5/14/08/a514086ab6757a148c127d5102e91c23.gif",
+        
+        "https://i.pinimg.com/originals/c0/d1/3d/c0d13d361d2b113395819904b64aab2f.gif",
+        
+        "https://i.pinimg.com/originals/0b/99/f9/0b99f90bfc24aa30792b16c053bd37d6.gif",
+        
+        "https://i.pinimg.com/originals/6a/a3/7f/6aa37fd0017bdb291ca8cbdd8b0ede52.gif",
+        
+       "https://i.pinimg.com/originals/24/2e/37/242e379f970c22bf30e1689290627058.gif",
+        
+        "https://i.pinimg.com/originals/9f/e7/61/9fe761410b7f3483887d29fbf2c0bc09.gif",
+        // Add more image URLs as needed
+      ];
+
+      let currentImageIndex = 0;
+      const bgcDiv = document.querySelector(".bcg");
+
+      function changeBackgroundImage() {
+        bgcDiv.style.backgroundImage = `url(${images[currentImageIndex]})`;
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+
+      // Call the function initially
+      changeBackgroundImage();
+
+      // Set interval to change the image every 5 seconds (5000 milliseconds)
+      setInterval(changeBackgroundImage, 50000);
+    });
+  </script>
+
+  <script>
+    // Your JavaScript code remains unchanged
+  </script>
+</head>
+<body>
+  
+  
+  <!-- ... (existing code) ... -->
+  <section role="main" class="scroll-container" id="skrollr-body">
+    <section id="slide-1" class="homeSlide">
+      <div class="bcg" data-center="background-position: 100% 0px;" data-top-bottom="background-position: 100% -100px;" data-anchor-target="#slide-1">
+        <div class="hsContainer">
+          <div class="hsContent" data-center="opacity: 1" data-top="opacity: 0" data-anchor-target="#slide-1 h2">
+            <!-- Div for each song -->
+            <div class="song">
+              <p><strong></strong> Faasle by Aaditya Raikhari</p>
+              <iframe src="https://archive.org/embed/aditya-rikhari-faasle" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <p><strong></strong> Kyon-Papon Music</p>
+              <iframe src="https://archive.org/embed/kyon-official-video-barfi-pritam-7415-paponmusic-sunidhi-chauhan-ranbir-priyanka" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <p><strong></strong> Khudaya Khair</p>
+              <iframe src="https://archive.org/embed/khudaya-khair" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <p><strong></strong>Maast Magan</p>
+              <iframe src="https://archive.org/embed/mast-magan-full-video-song-2-states-arijit-singh-arjun-kapoor-alia-bhatt_20230806" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+  </section>
+</body>
+
+    
+  
+  
+  
+  
+  
+  <section role="main" class="scroll-container" id="skrollr-body">
+    <section id="slide-1" class="homeSlide">
+      <div class="bcg" data-center="background-position: 100% 0px;" data-top-bottom="background-position: 100% -100px;" data-anchor-target="#slide-1">
+        <div class="hsContainer">
+          <div class="hsContent" data-center="opacity: 1" data-top="opacity: 0" data-anchor-target="#slide-1 h2">
+            <!-- Div for each song -->
+            <div class="song">
+              <iframe src="https://archive.org/embed/aditya-rikhari-faasle" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <iframe src="https://archive.org/embed/kyon-official-video-barfi-pritam-7415-paponmusic-sunidhi-chauhan-ranbir-priyanka" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <iframe src="https://archive.org/embed/khudaya-khair" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+            <div class="song">
+              <iframe src="https://archive.org/embed/mast-magan-full-video-song-2-states-arijit-singh-arjun-kapoor-alia-bhatt_20230806" width="500" height="60" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+  
+  
+  
+  
+  
+  
+  
+
+</div>
+
+      
+    </section>
+    <!-- END CONTACT SECTION -->
+  </section>
+</body>
+</html>
