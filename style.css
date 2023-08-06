@@ -435,6 +435,15 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
 
 /* Hide the overlay after the animation is complete */
 .welcome-overlay.hidden {
