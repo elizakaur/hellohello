@@ -479,5 +479,9 @@ img {
 /* Hide the overlay after the animation is complete */
 .welcome-overlay.hidden {
   display: none;
+}.welcome-overlay {
+  /* Your existing styles */
+  display: none;
 }
+
 
